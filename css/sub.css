@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/********   서브 페이지 - 상품안내  product   ************/
+
+.product_container {
+    margin-bottom: 100px;
+}
+.container{
+    width: 1092px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+@media (max-width : 1191px){
+    .container{
+        width: 952px;
+    }
+}
+@media (max-width : 991px){
+    .container{
+        width: 712px;
+        padding: 0 6px;
+    }
+}
+@media (max-width : 768px) {
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+.keyVisual{
+    height: 170px;
+    background-color: #ededed;
+}
+.keyVisual .title{
+position: absolute;
+top: 100px;
+width: 100%;
+text-align: center;
+}
+.keyVisual h1{
+    font-size: 48px;
+    font-weight: 400;
+    color: inherit;
+}
+.keyVisual .visual{
+    display: teble-cell;
+    height: 170px;
+    vertical-align: bottom;
+}
+.keyVisual .visual img{
+ max-width: 100%;   
+}
+.sub_nav{
+    border-bottom: 1px solid #ededed;
+}
+.sub_nav table{
+    margin: auto;
+}
+.sub_nav table td{
+    padding: 0 20px;
+    position: relative;
+}
+.sub_nav table td a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16p;
+    color: #808080;
+}
+.sub_nav table td.active a{
+    color: #801494;
+    border-bottom: #801494;
+    font-weight: 500;
+    border-bottom: 2px solid #801494;
+    margin-bottom: -3px;
+}
+.sub_nav table td.active a:after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 5px;
+    background: url(../img/icon_snb_arr.png);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width : 991px){
+    .sub_nav table{
+        width: 100%;
+    }
+    .sub_nav table td{
+        padding: 0 10px;
+    }
+}
+@media (max-width : 768px){
+    .sub_nav{
+        display: none;
+    }
+}
+.product_cont{
+    margin-top: 40px;
+}
+.product_title{
+    position: relative;
+    margin: 70px 0 10px 0;
+}
+.product_title .title{
+    color: #58595b;
+    line-height: 1.5;
+}
+.product_title .title strong{
+    display: block;
+    font-size: 35px;
+    color: #414042;
+    
+}
+.product_title .title span{
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 2;
+}
+.product_title .sns_btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.product_title .sns_btn a{
+    padding-left: 3px;
+}
+.product_title .sns_btn a::before{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 13px;
+    background-color: #b3b3b3;
+    margin-right: 3px;
+}
+.product_title .sns_btn a:first-child:before{
+    display: none;
+}
+.title_imges img{
+    max-width: 100%;
+}
+@media (max-width : 991px){
+    .product_title .title strong{
+        font-size: 24px;
+    }
+    .product_title .sns_btn img{
+        height: 22px;
+    }
+    .product_title .share_print{
+        display: none;
+    }
+}
+@media (max-width : 768px){
+    .product_title .title span{
+        font-size: 14px;
+    }
+}
+.find_btn_wrap{
+    padding-top: 50px;
+    text-align: center;
+}
+.btn_purple{
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #812990;
+    color: #812990;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+/* 보증제 안내 */
+.guarantee_container{
+    box-sizing: border-box;
+    margin: 30px 0 100px;
+}
+.guarantee{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 20px 30px;
+}
+@media (max-width : 1169px) {
+    .guarantee{
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+.guarantee_container::after{
+    display: block;
+    content: "";
+    clear: both;
+    overflow: hidden;
+  
+}
+.guarantee h3{
+ font-size: 22px;
+ font-weight: 400;
+ line-height: 2;
+ position: relative;
+}
+.guarantee h3::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 22px;
+    background-color: #812990;
+    top: 5px;
+}
+.guarantee img{
+    width: 100%;
+    max-width: 100%;
+}
+.guarantee p{
+    color: #3b3b3b;
+    margin-top: 10px;
+    width: 97%;
+}
+.guarantee a{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: #812990;
+}
